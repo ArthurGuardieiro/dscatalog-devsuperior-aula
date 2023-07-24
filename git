@@ -1,0 +1,161 @@
+[33mcommit 741708baf3efa489f1bcb4f5cd79e08a4befcf2c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Sun Jul 23 20:13:06 2023 -0300
+
+    application-dev, busca personalizada com nome do produto
+
+[33mcommit 54f72668ffece893f2cc83c290e794fc26a1f729[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Wed Jul 12 20:47:06 2023 -0300
+
+    H2 security configuration
+
+[33mcommit 858a330b788fc0bef3c82772010563d9fc93fc46[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Wed Jul 12 20:40:09 2023 -0300
+
+    Resource server
+
+[33mcommit 39007620d0b41d2516ca34f10a581ce09ddbdb39[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jul 11 16:44:05 2023 -0300
+
+    Token additional information
+
+[33mcommit 92017188d9ae158cfeb178f9d8d7728023ccf807[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jul 11 16:24:56 2023 -0300
+
+    Implementing OAtuh2 authorization server
+
+[33mcommit 2057a191bf3a1cc56042bc9a38dc9baa3ba0f3c8[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 10 13:39:07 2023 -0300
+
+    UserUpdateValidator
+
+[33mcommit 59066e51869bf1f6c06b46735c958607cd862e2c[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 10 13:21:13 2023 -0300
+
+    Custom constraintValidator
+
+[33mcommit f5f27b698908e8da4a246cd8e358267b51ebcdca[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 10 10:38:38 2023 -0300
+
+    custom validation response
+
+[33mcommit 8c6714b2e708e924d27ea11d40453b28d92c0b69[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 10 09:26:30 2023 -0300
+
+    Basic beans validation
+
+[33mcommit 08a62f9e257dda3b52346c6dba8637869c723da2[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 10 08:57:02 2023 -0300
+
+    User CRUD
+
+[33mcommit 5ed0ba7b4ffbc04d90c9d15aa9769b99949b37a1[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Fri Jul 7 13:41:56 2023 -0300
+
+    ORM mapping, database seeding
+
+[33mcommit bd06a70974e421bac260831e56e86abaa2d885b4[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jul 4 13:53:54 2023 -0300
+
+    adicionando teste de integração
+
+[33mcommit 67f4d1ec0d522d15908f5fe1d1b329bbea9f1e01[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jul 3 22:05:06 2023 -0300
+
+    Adicionando testes
+
+[33mcommit eed2826296abc9aab2ad7743a7c61d4889f7008b[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jun 27 21:26:59 2023 -0300
+
+    Refactor pageable
+
+[33mcommit b3ed66026c45ac309420bd25ed485a9309462b99[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jun 26 09:44:27 2023 -0300
+
+    Produtoct insert, update, delete
+
+[33mcommit a3ea2ecdc127b3d0fc86e84995cbdea8a8e26e7d[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jun 26 09:08:22 2023 -0300
+
+    Product repository, service, resource, GET ok
+
+[33mcommit b4a381ca3995ae6c0f4aa4acb3c1a177f0438f9a[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Fri Jun 23 09:14:28 2023 -0300
+
+    Product entity, SQL script
+
+[33mcommit 0e3a9250848f3ee172b1131f3851758772319f7a[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Thu Jun 22 15:39:13 2023 -0300
+
+    Pagination
+
+[33mcommit 6aa60e21f1a5dc4a4f3a1f78f9e16b3c2ed6b2d5[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Thu Jun 22 14:35:10 2023 -0300
+
+    Auditing data
+
+[33mcommit 6166a847eef8e68a798f249164b7b130e09d5393[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Thu Jun 22 11:04:25 2023 -0300
+
+    Update Category, change exception EntityNotFound to ResourceNotFound
+
+[33mcommit a6e03bf3122bddbfeb154e6fefe47a2c2c67623a[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Thu Jun 22 10:36:09 2023 -0300
+
+    Post new Category
+
+[33mcommit 8fea0d31eda24f7d36e742341289fb194db0f541[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Thu Jun 22 09:10:40 2023 -0300
+
+    Find Category by id, exception handling
+
+[33mcommit c84c8f24243d670ae81f8b0b820f19cfc52bfeb9[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Wed Jun 21 16:11:19 2023 -0300
+
+    DTO
+
+[33mcommit 5cb3882459c9853589fb2c51fa7394b1afe60a83[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jun 20 14:12:33 2023 -0300
+
+    Databased seeding
+
+[33mcommit 3bd2835d60097087525b4d91e10b91e1e1d28086[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jun 20 13:40:38 2023 -0300
+
+    H2 database
+
+[33mcommit 3cf0686a59f213808079ce1f54a7ddd76d4aaa44[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Tue Jun 20 13:10:03 2023 -0300
+
+    CategoryResources
+
+[33mcommit 028abf777dc16ce58de8abe0a38002a46f238a81[m
+Author: Arthur Guardieiro <arthur.aaguardieiro@icloud.com>
+Date:   Mon Jun 19 09:50:11 2023 -0300
+
+    Backend project created

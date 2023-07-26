@@ -5,6 +5,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.devsuperior.dscatalog.tests.TokenUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,11 +30,16 @@ public class ProductResourceIT {
 	
 	@Autowired
 	private ObjectMapper objectMapper;
+
+	@Autowired
+	private TokenUtil tokenUtil;
 	
 	private ProductDTO productDTO;
 	private Long existingId;
 	private Long nonExistindId;
 	private Long countTotalProducts;
+	private String username;
+	private String password;
 	
 	@BeforeEach
 	void setUp() throws Exception {
@@ -41,6 +47,8 @@ public class ProductResourceIT {
 		nonExistindId = 1000L;
 		countTotalProducts = 25L;
 		productDTO = Factory.createProductDto();
+		username = "maria@gmail.com";
+		password = "123456";
 	}
 	
 	@Test
@@ -62,7 +70,9 @@ public class ProductResourceIT {
 	
 	@Test
 	public void updateShouldReturnProdctDTOWhenIdExists() throws Exception {
-		
+
+		String accessToken = tokenUtil.obtainAccessToken(mockMvc, username, password);
+
 		String jsonBody = objectMapper.writeValueAsString(productDTO);
 		
 		String expectedName = productDTO.getName();
@@ -70,6 +80,7 @@ public class ProductResourceIT {
 		
 		ResultActions result = 
 				mockMvc.perform(put("/products/{id}", existingId)
+						.header("Authorization", "Bearer " + accessToken)
 						.content(jsonBody)
 						.contentType(MediaType.APPLICATION_JSON)
 						.accept(MediaType.APPLICATION_JSON));
@@ -83,7 +94,9 @@ public class ProductResourceIT {
 	
 	@Test
 	public void updateShouldReturnNotFoundWhenIdDoesNotExists() throws Exception {
-		
+
+		String accessToken = tokenUtil.obtainAccessToken(mockMvc, username, password);
+
 		String jsonBody = objectMapper.writeValueAsString(productDTO);
 		
 		String expectedName = productDTO.getName();
@@ -91,6 +104,7 @@ public class ProductResourceIT {
 		
 		ResultActions result = 
 				mockMvc.perform(put("/products/{id}", nonExistindId)
+						.header("Authorization", "Bearer " + accessToken)
 						.content(jsonBody)
 						.contentType(MediaType.APPLICATION_JSON)
 						.accept(MediaType.APPLICATION_JSON));
